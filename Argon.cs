@@ -23,7 +23,7 @@ void setup() {
     Particle.function("buzzeralarmon", buzzer_alarm_manual);
     
     
-    //Particle.subscribe("Intruder", intruderalertscreen, "390027000547393035313138");
+    //Particle.subscribe("Intruder", intruderalertscreen, <deviceID>);
     Particle.subscribe("Intruder", buzzeralarm,<deviceID>);
     
     Particle.subscribe("Nointruder", nointruder, <deviceID>);
